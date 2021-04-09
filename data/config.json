@@ -1,0 +1,10 @@
+{
+	"wifi_ssid": "",
+	"wifi_password": "",
+	"curr_color": "ffffff",
+	"effect_active": true,
+	"effect_name": "row",
+	"effect_speed": 1.00,
+	"num_elements": 12,
+	"espalexa_name": "NanoLeafs"
+}
