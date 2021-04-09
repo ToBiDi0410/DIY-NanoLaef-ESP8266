@@ -13,6 +13,7 @@ Dieses Projekt beeinhaltet die Arduino Software zum steuern von meinen DIY-NanoL
 - Verschiedene Effekte
 - Basierend auf FastLED und somit für viele LED-Type einsetzbar
 - Deutsches Webinterface
+- Speicherung des aktuellen Zustands bei Trennung der Stromverbindung
 
 ## Installation
 
