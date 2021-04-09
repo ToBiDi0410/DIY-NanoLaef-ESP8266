@@ -37,6 +37,7 @@ Um die Dateien auf den ESP8266 zu flashen, benötigst du ausserdem:
 Nun sollten sich mehrere Dateien in der Arduino IDE öffnen. 
 
 Öffne nun mit einem Text-Editor die Datei 'Data --> config.json' aus dem Sketch Ordner von hier, und fügst bei 'wifi_ssid' in den Anführungszeichen dahinter deine WLAN SSID ein und bei 'wifi_password' dein WLAN Passwort. Zudem musst du bei 'num_elements' die Zahl durch die Anzahl verschiedener Elemente ersetzen (in diesem Fall die Anzahl der NanoLeafs).
+Den LED Pin (Data) kannst du in der Datei '02_lightmanager.ino' ändern. Standardmäßig ist es GPIO 2 was z.B. bei eiem Wemos D1 Mini der Pin D2 ist. Wichtig ist dass als Board 'Generic ESP8266' gewählt ist, damit die Alexa Funktion funktioniert.
 
 #### !WICHTIG! Öffne nun den Libraries Ordner deiner Arduino IDE und gehe zu 'ESPAsyncWebServer' --> 'src' --> 'WebResponseImpl.h'.
 #### Ändere nun in Zeile 63 "#define TEMPLATE_PLACEHOLDER '%'" zu "#define TEMPLATE_PLACEHOLDER '~'"
