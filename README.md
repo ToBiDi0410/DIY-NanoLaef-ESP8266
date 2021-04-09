@@ -37,7 +37,10 @@ Nun sollten sich mehrere Dateien in der Arduino IDE öffnen.
 
 Öffne nun mit einem Text-Editor die Datei 'Data --> config.json' aus dem Sketch Ordner von hier, und ersetzt 'wifi_ssid' mit deiner WLAN SSID und 'wifi_password' mit deinem WLAN Passwort.
 
-Nutz du den ESP8266 und WS2812B LEDs, dann kannst du den Sketch nun einfach hochladen. Benutzt du andere LEDs musst du in der Datei '02_lightManager' '#define LED_TYPE WS2812B' zu deinem gewünschten LED-Modell ändern (VORSICHT! Es muss auch von FastLED unterstützt werden)
+#### !WICHTIG! Öffne nun den Libraries Ordner deiner Arduino IDE und gehe zu 'ESPAsyncWebServer' --> 'src' --> 'WebResponseImpl.h'.
+#### Ändere nun in Zeile 63 "#define TEMPLATE_PLACEHOLDER '%'" zu "#define TEMPLATE_PLACEHOLDER '~'"
+
+Nutz du den ESP8266 und WS2812B LEDs, dann kannst du den Sketch nun einfach hochladen. Benutzt du andere LEDs musst du in der Datei '02_lightManager.ino' '#define LED_TYPE WS2812B' zu deinem gewünschten LED-Modell ändern (VORSICHT! Es muss auch von FastLED unterstützt werden)
 
 Nachdem der Sketch hochgeladen ist, musst du noch das Dateisystem hochladen. Das geht indem du einfach auf 'Werkzeuge' und dann auf 'ESP8266 Sketch Data Upload' klickst.
 
