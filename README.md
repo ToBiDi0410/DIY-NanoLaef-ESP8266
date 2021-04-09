@@ -5,7 +5,7 @@ Eine Repository mit der Software zur Steuerung von DIY NanoLeafs basierend auf W
 Ich habe dieses "Steuerungssystem" in meiner Freizeit Entwickelt. Bugs können deshalb eventuell sehr lange bestehen bis sie behoben werden!
 
 ## Projektinfos
-Dieses Projekt beeinhaltet die Arduino Software zum steuern von meinen DIY-NanoLeafs. Die NanoLeafs bestehen jeweils aus 3 Leds (in jeder Ecke der Dreiecke eine LED), dies kann aber in der Software einfach geändert werden, für andere Formen oder LED Anzahlen.
+Dieses Projekt beeinhaltet die Arduino Software zum steuern von meinen DIY-NanoLeafs. Die NanoLeafs bestehen jeweils aus 3 Leds (in jeder Ecke der Dreiecke eine LED), dies kann manuell (hier kein Tutorial dazu) geändert werden (einfach für Fortgeschrittene Nutzer).
 
 ## Features
 - Webinterface (Cross-Kompatibel) (Nur deutsch)
@@ -35,7 +35,7 @@ Um die Dateien auf den ESP8266 zu flashen, benötigst du ausserdem:
 
 Nun sollten sich mehrere Dateien in der Arduino IDE öffnen. 
 
-Öffne nun mit einem Text-Editor die Datei 'Data --> config.json' aus dem Sketch Ordner von hier, und ersetzt 'wifi_ssid' mit deiner WLAN SSID und 'wifi_password' mit deinem WLAN Passwort.
+Öffne nun mit einem Text-Editor die Datei 'Data --> config.json' aus dem Sketch Ordner von hier, und fügst bei 'wifi_ssid' in den Anführungszeichen dahinter deine WLAN SSID ein und bei 'wifi_password' dein WLAN Passwort. Zudem musst du bei 'num_elements' die Zahl durch die Anzahl verschiedener Elemente ersetzen (in diesem Fall die Anzahl der NanoLeafs).
 
 #### !WICHTIG! Öffne nun den Libraries Ordner deiner Arduino IDE und gehe zu 'ESPAsyncWebServer' --> 'src' --> 'WebResponseImpl.h'.
 #### Ändere nun in Zeile 63 "#define TEMPLATE_PLACEHOLDER '%'" zu "#define TEMPLATE_PLACEHOLDER '~'"
