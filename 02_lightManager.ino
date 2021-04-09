@@ -5,8 +5,9 @@
 CRGB leds[120];
 CRGB curr_color = CRGB::Red;
 
+int NUM_LEDS_PER_ELEMENT = 3;
 int NUM_ELEMENTS = 1;
-int NUM_LEDS = NUM_ELEMENTS * 3;
+int NUM_LEDS = NUM_ELEMENTS * NUM_LEDS_PER_ELEMENT;
 
 void lightSetup() {
   FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);

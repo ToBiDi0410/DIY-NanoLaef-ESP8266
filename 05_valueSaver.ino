@@ -57,7 +57,7 @@ boolean readAllData() {
     effect_speed = obj["effect_speed"];
     
     NUM_ELEMENTS = obj["num_elements"];
-    NUM_LEDS = NUM_ELEMENTS * 3;
+    NUM_LEDS = NUM_ELEMENTS * NUM_LEDS_PER_ELEMENT;
 
     String espalexa_name_read = obj["espalexa_name"];
     espalexa_name = espalexa_name_read;
